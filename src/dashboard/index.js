@@ -103,8 +103,11 @@ const FacebookFollowers = 925;
 const VkFollowers = 11321;
 
 const total = YouTubeFollowers + TwitterFollowers + FacebookFollowers + VkFollowers;
-const str = '' + total;
-const result = str.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, "$1 ");
+
+//const str = '' + total;
+// const result = str.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, "$1 ");
+//const result = total.toLocaleString(window.navigator.language)
+const result = total.toLocaleString(window.navigator.language)
 
 const Item = props => {
   const {
